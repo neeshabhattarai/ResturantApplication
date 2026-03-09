@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication", "ResturantApplication\ResturantApplication.csproj", "{AC71D996-B13A-4291-B3C4-9EE9549C99B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication.Api", "ResturantApplication.Api\ResturantApplication.Api.csproj", "{AC71D996-B13A-4291-B3C4-9EE9549C99B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication.Domain", "ResturantApplication.Domain\ResturantApplication.Domain.csproj", "{B509FD2A-F31A-4495-91C8-38C8E5F232C7}"
 EndProject
