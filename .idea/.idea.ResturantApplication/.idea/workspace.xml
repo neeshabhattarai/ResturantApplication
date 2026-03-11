@@ -9,22 +9,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/AddRoomDTo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/IRoomService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/RoomService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/ResturantApplication.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/ResturantApplication.http" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/ResturantApplication.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/ResturantApplication.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/AddRoomDTo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomDTo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/IRoomService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/RoomService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +47,33 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/AddRoomDTo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/UpdateRoom/UpdateRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetById/GetByIdHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3AQt6eQ7Q1yhvyCbW9chjeW2Srz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,7 +94,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -133,7 +140,10 @@
       <option name="presentableId" value="Default" />
       <updated>1772536448388</updated>
       <workItem from="1772536449729" duration="6823000" />
-      <workItem from="1773053960251" duration="4208000" />
+      <workItem from="1773053960251" duration="4570000" />
+      <workItem from="1773130722548" duration="3835000" />
+      <workItem from="1773220835461" duration="6088000" />
+      <workItem from="1773236685553" duration="1323000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -152,8 +162,18 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="67dbd647-5973-4172-83eb-949da42d03cd" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="67dbd647-5973-4172-83eb-949da42d03cd">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />

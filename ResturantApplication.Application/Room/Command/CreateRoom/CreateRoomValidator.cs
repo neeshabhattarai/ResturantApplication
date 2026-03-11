@@ -4,7 +4,7 @@ using ResturantApplication.Application.Room.DTOs;
 
 namespace ResturantApplication.Application.Room.Command.CreateRoom;
 
-public class CreateRoomValidator : AbstractValidator<AddRoomDTo>
+public class CreateRoomValidator : AbstractValidator<CreateRoomCommand>
 {
     private string[] deslist={"Hello", "World"};
     public CreateRoomValidator()
