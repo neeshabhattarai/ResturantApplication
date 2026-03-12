@@ -1,5 +1,6 @@
 using AutoMapper;
 using ResturantApplication.Application.Room.Command.CreateRoom;
+using ResturantApplication.Application.Room.Command.UpdateRoom;
 using ResturantApplication.Domain.Entities;
 
 namespace ResturantApplication.Application.Room.DTOs;
@@ -10,5 +11,6 @@ public class RoomProfile : Profile
     {
         CreateMap<RoomDTo,Domain.Entities.Room>().ReverseMap();
         CreateMap<CreateRoomCommand, Domain.Entities.Room>().ReverseMap();
+        CreateMap<UpdateRoomCommand, Domain.Entities.Room>().ReverseMap();
     }
 }
