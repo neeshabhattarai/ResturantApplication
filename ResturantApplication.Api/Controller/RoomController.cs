@@ -48,23 +48,16 @@ public class RoomController : ControllerBase
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteById([FromRoute] int id)
-    {
-        var result =await mediator.Send(new DeleteRoomCommand(id));
-        if (result)
-            return NoContent();
-        return NotFound();
+    { 
+        await mediator.Send(new DeleteRoomCommand(id));
+        return NoContent();
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> Update([FromRoute] int id, UpdateRoomCommand updateRoomCommand)
     {
         updateRoomCommand.Id = id;
-        var result = await mediator.Send(updateRoomCommand);
-        if (result==null)
-        {
-            return BadRequest();
-        }
-
-        return Ok(result);
+        await mediator.Send(updateRoomCommand);
+        return Ok("Successfully updated room");
     }
 }

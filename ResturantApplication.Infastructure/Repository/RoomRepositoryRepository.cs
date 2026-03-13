@@ -18,6 +18,7 @@ public class RoomRepositoryRepository:IRoomRepository
     public List<Room> GetAll()
 
     {
+        // throw new Exception("This repository doesn't support getting all rooms");
         var roomDetails = _context.Rooms.ToList();
         return roomDetails;
     }
@@ -35,16 +36,12 @@ public class RoomRepositoryRepository:IRoomRepository
         return result;
     }
 
-    public async Task<bool> DeleteRoom(int requestId)
+    public async Task DeleteRoom(Room roomdetails)
     {
-        var roomdetails = await _context.Rooms.FirstOrDefaultAsync(x => x.Id == requestId);
-        if (roomdetails == null)
-        {
-            return false;
-        }
+        
         _context.Rooms.Remove(roomdetails);
         await _context.SaveChangesAsync();
-        return true;
+        
     }
 
     public Task SaveChanges()

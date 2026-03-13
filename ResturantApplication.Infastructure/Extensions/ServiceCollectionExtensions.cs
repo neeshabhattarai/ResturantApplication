@@ -12,5 +12,6 @@ public static class ServiceCollectionExtensions
     {
         services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         services.AddScoped<IRoomRepository, RoomRepositoryRepository>();
+        services.AddScoped<IDish, DishRepository>();
     }
 }

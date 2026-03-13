@@ -9,17 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/ResturantApplication.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/ResturantApplication.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/AddRoomDTo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomDTo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/IRoomService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/RoomService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/20260303124905_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/20260303124905_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,15 +44,21 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/neeshabhattarai/ResturantApplication.git&quot;,
-    &quot;accountId&quot;: &quot;107a5e4b-d7f2-40f4-bc17-cf73b44c1402&quot;
+    &quot;accountId&quot;: &quot;2c2ed646-ce39-46d8-afb0-612338d7d218&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8056cd3f452fefb9834f05cdb275b762dd41f27b7766cd71174e78592dc495b/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/DeleteDish/DeleteDishHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/DTO/DishDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,7 +69,9 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetById/GetByIdHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Repository/IDish.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -78,26 +88,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResturantApplication: http.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Debug",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResturantApplication: http">
     <configuration name="ResturantApplication: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" />
@@ -144,6 +154,9 @@
       <workItem from="1773130722548" duration="3835000" />
       <workItem from="1773220835461" duration="6088000" />
       <workItem from="1773236685553" duration="1323000" />
+      <workItem from="1773307560892" duration="6961000" />
+      <workItem from="1773375253561" duration="12735000" />
+      <workItem from="1773392822010" duration="11727000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -202,8 +215,79 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="911" />
+            </startOffsets>
+            <endOffsets>
+              <option value="952" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs</url>
+          <line>25</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="961" />
+            </startOffsets>
+            <endOffsets>
+              <option value="992" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Query/GetAllDish/GetAllDishHandler.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/Dishes/Query/GetAllDish/GetAllDishHandler.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="763" />
+            </startOffsets>
+            <endOffsets>
+              <option value="805" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Query/GetAllDish/GetAllDishHandler.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/Dishes/Query/GetAllDish/GetAllDishHandler.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" containingFunctionPresentation="Method 'GetById'">
+            <startOffsets>
+              <option value="1148" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1186" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#ResturantApplication.Domain.Entities.Room" memberName="Dishes" />
+        <PinnedItemInfo parentTag="Type#ResturantApplication.Domain.Entities.Room" memberName="Description" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

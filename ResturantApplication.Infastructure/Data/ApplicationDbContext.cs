@@ -7,7 +7,7 @@ public class ApplicationDbContext:DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
     {
-        
     }
     public DbSet<Room> Rooms { get; set; }
+    public DbSet<Dish> Dish { get; set; }
 }
