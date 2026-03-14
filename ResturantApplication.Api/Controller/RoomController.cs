@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ResturantApplication.Application.Room.Command.CreateRoom;
 using ResturantApplication.Application.Room.Command.DeleteRoom;
@@ -19,7 +20,8 @@ public class RoomController : ControllerBase
     {
         this.mediator=mediator;
     }
-
+[Authorize]
+[ProducesResponseType(StatusCodes.Status200OK)]
     [HttpGet] public IActionResult GetAll()
     {
         return Ok(mediator.Send(new GetAllRoomQuery()));

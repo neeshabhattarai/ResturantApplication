@@ -10,19 +10,13 @@
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/ResturantApplication.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/ResturantApplication.Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/20260303124905_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/20260303124905_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetById/GetByIdHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Repository/IDish.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,7 +85,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Debug",
+    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Run",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -157,6 +152,7 @@
       <workItem from="1773307560892" duration="6961000" />
       <workItem from="1773375253561" duration="12735000" />
       <workItem from="1773392822010" duration="11727000" />
+      <workItem from="1773481814056" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />

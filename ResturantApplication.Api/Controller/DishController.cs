@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ResturantApplication.Application.Dishes.Command.CreateDish;
 using ResturantApplication.Application.Dishes.Command.DeleteDish;
@@ -10,6 +11,7 @@ namespace ResturantApplication.Controller;
 
 [ApiController]
 [Route("api/rooms/{roomId}/dishes")]
+[Authorize]
 public class DishController : ControllerBase
 {
     private readonly IMediator _mediator;
