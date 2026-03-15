@@ -8,7 +8,6 @@ namespace ResturantApplication.Infastructure.Repository;
 public class RoomRepositoryRepository:IRoomRepository
 {
     private readonly ApplicationDbContext _context;
-    private IRoomRepository _roomRepositoryImplementation;
 
     public RoomRepositoryRepository(ApplicationDbContext context)
     {

@@ -5,6 +5,7 @@ using ResturantApplication.Infastructure.Data;
 using ResturantApplication.Application;
 using ResturantApplication.Application.Extensions;
 using ResturantApplication.Domain.Entities;
+using ResturantApplication.Infastructure.DataSeed;
 using ResturantApplication.Infastructure.Extensions;
 using Serilog;
 using Serilog.Events;using Serilog.Formatting.Compact;
@@ -21,6 +22,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+var scope=app.Services.CreateScope();
+var seed=scope.ServiceProvider.GetRequiredService<IRoleSeed>();
+await seed.Seed();
 app.UseMiddleware(typeof(ExceptionHandler));
 app.UseHttpsRedirection();
 app.UseAuthentication();

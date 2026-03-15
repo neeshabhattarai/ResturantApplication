@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using ResturantApplication.Application.Extensions;
+using ResturantApplication.Infastructure.DataSeed;
 using ResturantApplication.Infastructure.Extensions;
 using Serilog;
 
@@ -11,6 +12,7 @@ public static class WebApplicationBuilderImplementation
     {
         builder.Services.AddAuthentication();
         builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddScoped<IRoleSeed, RoleSeed>();
         builder.Services.AddSwaggerGen(c =>
         {
             c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
