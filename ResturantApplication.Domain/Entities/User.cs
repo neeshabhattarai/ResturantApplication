@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.JavaScript;
 using Microsoft.AspNetCore.Identity;
 
 namespace ResturantApplication.Domain.Entities;
@@ -5,4 +6,5 @@ namespace ResturantApplication.Domain.Entities;
 public class User:IdentityUser
 {
     
+    public string? Identity { get; set; }
 }

@@ -25,7 +25,7 @@ app.UseMiddleware(typeof(ExceptionHandler));
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapGroup("/api").MapIdentityApi<User>();
+app.MapGroup("/api").WithTags("User").MapIdentityApi<User>();
 ;
 app.MapControllers();
 

@@ -10,12 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/ResturantApplication.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/ResturantApplication.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +44,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8056cd3f452fefb9834f05cdb275b762dd41f27b7766cd71174e78592dc495b/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/DishController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,6 +60,8 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/DTOs/RoomProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetById/GetByIdHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/User/Command/UpdateUser/UpdateUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/User/CurrentUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Repository/IDish.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,26 +83,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ResturantApplication: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResturantApplication: http">
     <configuration name="ResturantApplication: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" />
@@ -152,7 +152,8 @@
       <workItem from="1773307560892" duration="6961000" />
       <workItem from="1773375253561" duration="12735000" />
       <workItem from="1773392822010" duration="11727000" />
-      <workItem from="1773481814056" duration="2730000" />
+      <workItem from="1773481814056" duration="3385000" />
+      <workItem from="1773567792742" duration="4640000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
