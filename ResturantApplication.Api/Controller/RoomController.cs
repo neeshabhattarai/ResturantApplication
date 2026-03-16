@@ -20,7 +20,7 @@ public class RoomController : ControllerBase
     {
         this.mediator=mediator;
     }
-[Authorize]
+[Authorize(Policy = "HasIdentityRole")]
 [ProducesResponseType(StatusCodes.Status200OK)]
     [HttpGet] public IActionResult GetAll()
     {

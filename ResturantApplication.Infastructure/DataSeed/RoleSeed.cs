@@ -4,22 +4,24 @@ using ResturantApplication.Infastructure.Data;
 
 namespace ResturantApplication.Infastructure.DataSeed;
 
-public class RoleSeed(ApplicationDbContext context):IRoleSeed
+public class RoleSeed(ApplicationDbContext context,RoleManager<IdentityRole> roleManager):IRoleSeed
 {
     public async Task Seed()
     {
         List<IdentityRole> roles = new List<IdentityRole>
         {
-            new(UserRole.User),
-            new(UserRole.Admin),
-            new(UserRole.Manager)
+            new(UserRole.User.ToUpper()),
+            new(UserRole.Admin.ToUpper()),
+            new(UserRole.Manager.ToUpper())
 
         };
-        if (!context.Roles.Any())
+        foreach (var role in roles)
         {
-            await context.Roles.AddRangeAsync(roles);
-            await context.SaveChangesAsync();
+            if (!await roleManager.RoleExistsAsync(role.Name))
+            {
+                await roleManager.CreateAsync(role);
+            }
         }
-        
+
     }
 }
