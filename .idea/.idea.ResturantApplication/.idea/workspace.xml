@@ -10,12 +10,10 @@
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/AssignRoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/AssignRoleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Role/Command/AssignRole/AssignRoleHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Role/Command/AssignRole/AssignRoleHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Persistence/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/DataSeed/RoleSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/DataSeed/RoleSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Constant/UserRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Constant/UserRole.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +75,12 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/DataSeed/IRoleSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/DataSeed/RoleSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequirementHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequried.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -93,27 +93,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ResturantApplication: http.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Debug",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Attach to Process.2050:ResturantApplication.executor": "Debug",
+    "HTTP Request.ResturantApplication | #1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="ResturantApplication | #1" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ResturantApplication: http">
+    <configuration name="ResturantApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ResturantApplication: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ResturantApplication.Api/ResturantApplication.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -146,6 +164,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.ResturantApplication | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -167,6 +190,7 @@
       <workItem from="1773574132753" duration="3573000" />
       <workItem from="1773652852247" duration="4516000" />
       <workItem from="1773663364102" duration="1156000" />
+      <workItem from="1773735190376" duration="6839000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -295,6 +319,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs" containingFunctionPresentation="Method 'CreateAsync'">
+            <startOffsets>
+              <option value="1208" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1232" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs" containingFunctionPresentation="Method 'Debug'">
+            <startOffsets>
+              <option value="543" />
+            </startOffsets>
+            <endOffsets>
+              <option value="605" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,7 @@ using ResturantApplication.Domain.Repository;
 using ResturantApplication.Infastructure.Authorization;
 using ResturantApplication.Infastructure.Data;
 using ResturantApplication.Infastructure.Repository;
+using ResturantApplication.Infastructure.Requirement;
 
 namespace ResturantApplication.Infastructure.Extensions;
 public static class ServiceCollectionExtensions
@@ -17,6 +19,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IRoomRepository, RoomRepositoryRepository>();
         services.AddIdentityApiEndpoints<User>().AddClaimsPrincipalFactory<IdentityRoleClaim>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
         services.AddScoped<IDish, DishRepository>();
-        services.AddAuthorizationBuilder().AddPolicy("HasIdentityRole", builder => builder.RequireClaim("Identity"));
+        services.AddAuthorizationBuilder().AddPolicy("HasIdentityRole", builder => builder.RequireClaim("Identity","Nepali")).AddPolicy("IsEmail",builder=>builder.AddRequirements(new IdentityRequried("hello12@gmail.com")));
+        services.AddScoped<IAuthorizationHandler, IdentityRequirementHandler>();
     }
 }

@@ -27,6 +27,12 @@ public class IdentityRoleClaim : UserClaimsPrincipalFactory<User, IdentityRole>
         {
             id.AddClaim(new Claim("Identity", user.Identity));
         }
+        var roles= await _userManager.GetRolesAsync(user);
+        foreach (var role in roles)
+        {
+            Console.WriteLine(role);
+            id.AddClaim(new Claim(ClaimTypes.Role, role));
+        }
 
         return new ClaimsPrincipal(id);
     }
