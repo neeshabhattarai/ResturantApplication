@@ -10,10 +10,11 @@
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/UnAssigningRoleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Authorization/IdentityRoleClaim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Constant/UserRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Constant/UserRole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +78,13 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequirementHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequried.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/AurhorizationRequirement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/IRequirementAuthorization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/ResourcesOperation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -95,7 +99,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Debug",
+    ".NET Launch Settings Profile.ResturantApplication: http.executor": "Run",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Attach to Process.2050:ResturantApplication.executor": "Debug",
     "HTTP Request.ResturantApplication | #1.executor": "Run",
@@ -190,7 +194,8 @@
       <workItem from="1773574132753" duration="3573000" />
       <workItem from="1773652852247" duration="4516000" />
       <workItem from="1773663364102" duration="1156000" />
-      <workItem from="1773735190376" duration="6839000" />
+      <workItem from="1773735190376" duration="7194000" />
+      <workItem from="1773908030451" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />

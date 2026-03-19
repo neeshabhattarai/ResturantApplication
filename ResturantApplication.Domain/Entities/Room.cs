@@ -8,4 +8,6 @@ public class Room
     public string Name { get; set; }
     public string Description { get; set; }
     public ICollection<Dish> Dishes { get; set; }=new List<Dish>();
+    public User User { get; set; }
+    public string UserId { get; set; }
 }

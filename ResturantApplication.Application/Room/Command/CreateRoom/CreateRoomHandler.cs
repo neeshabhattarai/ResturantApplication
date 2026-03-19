@@ -1,14 +1,24 @@
 using AutoMapper;
 using MediatR;
+using ResturantApplication.Application.User;
 using ResturantApplication.Domain.Repository;
+using ResturantApplication.Infastructure.Service;
+
 
 namespace ResturantApplication.Application.Room.Command.CreateRoom;
 
-public class CreateRoomHandler(IRoomRepository repository,IMapper mapper):IRequestHandler<CreateRoomCommand,int>
+
+public class CreateRoomHandler(IRoomRepository repository,IMapper mapper,IUserContext context,IRequirementAuthorization authorization):IRequestHandler<CreateRoomCommand,int>
 {
     public async Task<int> Handle(CreateRoomCommand request, CancellationToken cancellationToken)
     {
-       var response= await repository.CreateRoom(mapper.Map<Domain.Entities.Room>(request));
+        var reply = mapper.Map<Domain.Entities.Room>(request);
+        reply.UserId =context.GetCurrentUser().Id;
+        if (await authorization.Authorize(ResourcesOperation.Create, reply)==false)
+        {
+            throw new Exception("You cannot create a room");
+        }
+       var response= await repository.CreateRoom(reply);
        return response.Id;
     }
 }
