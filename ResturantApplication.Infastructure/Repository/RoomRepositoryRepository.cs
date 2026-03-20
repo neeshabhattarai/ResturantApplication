@@ -1,26 +1,50 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using ResturantApplication.Domain.Constant;
 using ResturantApplication.Domain.Entities;
 using ResturantApplication.Domain.Repository;
 using ResturantApplication.Infastructure.Data;
+using ResturantApplication.Infastructure.Service;
 
 namespace ResturantApplication.Infastructure.Repository;
 
 public class RoomRepositoryRepository:IRoomRepository
 {
     private readonly ApplicationDbContext _context;
+    private readonly ILogger<RoomRepositoryRepository> _logger;
 
-    public RoomRepositoryRepository(ApplicationDbContext context)
+    public RoomRepositoryRepository(ApplicationDbContext context,ILogger<RoomRepositoryRepository> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
-    public List<Room> GetAll()
+    public async Task<(IEnumerable<Room>,int)> GetAll(string? searchParams, int pageNumber, int pageSize,string? sortBy,string? sortDirection)
 
     {
         // throw new Exception("This repository doesn't support getting all rooms");
-        var roomDetails = _context.Rooms.ToList();
-        return roomDetails;
+        _logger.LogInformation($"Searching for rooms with {searchParams}");
+        var roomDetails = _context.Rooms.Where(r =>
+            searchParams == null || r.Name.Contains(searchParams) || r.Description.Contains(searchParams));
+        roomDetails.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+        var totalCount=await roomDetails.CountAsync();
+        if (sortBy != null)
+        {
+            var containedString=new Dictionary<string,Expression<Func<Room, object>>>
+            {
+                {nameof(Room.Name),r=>r.Name},
+                {nameof(Room.Description),r=>r.Description}
+            };
+            var sortedResult=containedString[sortBy];
+            roomDetails=SortDirection.Ascending==sortDirection
+                ? roomDetails.OrderBy(sortedResult)
+                : roomDetails.OrderByDescending(sortedResult);
+            
+        }
+        return (roomDetails.ToList(),totalCount);
     }
+
 
     public async Task<Room> CreateRoom(Room room)
     {

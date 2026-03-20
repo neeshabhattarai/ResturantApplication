@@ -10,11 +10,14 @@
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Logs/logs-Resturant-Room-Api-20260319.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Logs/logs-Resturant-Room-Api-20260319.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d9de85ef61604c57bb50b8cac968bd371a00/1c/8058b40a/IBaseRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7415982338a3ccbd2a7a4eb483af627bda727e356b86bb32c5d4f6998f9c/IRequestHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8056cd3f452fefb9834f05cdb275b762dd41f27b7766cd71174e78592dc495b/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d7e2ce30531b7a2d56142411c5e51c3d516aafcb44e7628167b959660a65c/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +72,8 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetById/GetByIdHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/User/Command/UpdateUser/UpdateUserHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/User/CurrentUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Constant/GetAllRoomsWithCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Constant/SortDirection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Domain/Repository/IDish.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,9 +84,9 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/DishRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequirementHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/IdentityRequried.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/TestRequirement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Requirement/TestRequirementHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/AurhorizationRequirement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/IRequirementAuthorization.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ResturantApplication.Infastructure/Service/ResourcesOperation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -195,7 +201,8 @@
       <workItem from="1773652852247" duration="4516000" />
       <workItem from="1773663364102" duration="1156000" />
       <workItem from="1773735190376" duration="7194000" />
-      <workItem from="1773908030451" duration="4026000" />
+      <workItem from="1773908030451" duration="6912000" />
+      <workItem from="1773997624131" duration="7335000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />
@@ -350,6 +357,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/PageResult/PageResult.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/PageResult/PageResult.cs" containingFunctionPresentation="Property 'items'">
+            <startOffsets>
+              <option value="629" />
+            </startOffsets>
+            <endOffsets>
+              <option value="633" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" containingFunctionPresentation="Method 'GetAll'">
+            <startOffsets>
+              <option value="931" />
+            </startOffsets>
+            <endOffsets>
+              <option value="969" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ResturantApplication.Application/PageResult/PageResult.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/ResturantApplication.Application/PageResult/PageResult.cs" containingFunctionPresentation="Constructor 'PageResult'">
+            <startOffsets>
+              <option value="504" />
+            </startOffsets>
+            <endOffsets>
+              <option value="546" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,11 +20,11 @@ public class RoomController : ControllerBase
     {
         this.mediator=mediator;
     }
-[Authorize(Policy = "HasIdentityRole")]
+// [Authorize(Policy = "HasIdentityRole")]
 [ProducesResponseType(StatusCodes.Status200OK)]
-    [HttpGet] public IActionResult GetAll()
+    [HttpGet] public async Task<IActionResult> GetAll([FromQuery]GetAllRoomQuery query)
     {
-        return Ok(mediator.Send(new GetAllRoomQuery()));
+        return Ok(await mediator.Send(query));
     }
 
     [HttpPost]
@@ -37,6 +37,7 @@ public class RoomController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [Authorize(Policy = "CheckAge")]
     public async Task<IActionResult> GetById([FromRoute] int id)
     {
         var result =await mediator.Send(new GetByIdQuery(id));

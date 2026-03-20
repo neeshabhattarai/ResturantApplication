@@ -20,8 +20,9 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IRoomRepository, RoomRepositoryRepository>();
         services.AddIdentityApiEndpoints<User>().AddClaimsPrincipalFactory<IdentityRoleClaim>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
         services.AddScoped<IDish, DishRepository>();
-        services.AddAuthorizationBuilder().AddPolicy("HasIdentityRole", builder => builder.RequireClaim("Identity","Nepali")).AddPolicy("IsEmail",builder=>builder.AddRequirements(new IdentityRequried("hello12@gmail.com")));
+        services.AddAuthorizationBuilder().AddPolicy("HasIdentityRole", builder => builder.RequireClaim("Identity","Nepali")).AddPolicy("IsEmail",builder=>builder.AddRequirements(new IdentityRequried("hello12@gmail.com"))).AddPolicy("CheckAge",builder=>builder.AddRequirements(new TestRequirement(21)));
         services.AddScoped<IAuthorizationHandler, IdentityRequirementHandler>();
+        services.AddScoped<IAuthorizationHandler, TestRequirementHandler>();
         services.AddScoped<IRequirementAuthorization,AurhorizationRequirement>();
     }
 }
