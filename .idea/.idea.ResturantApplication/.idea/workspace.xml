@@ -9,14 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74463987-9f4c-48cc-ac4a-fbb11d944a8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ResturantApplication.Application.Tests/ResturantApplication.Application.Tests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ResturantApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Controller/RoomController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Api/Logs/logs-Resturant-Room-Api-20260319.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Api/Logs/logs-Resturant-Room-Api-20260319.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Queries/GetAllRoom/GetAllRoomQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Repository/IRoomRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Repository/RoomRepositoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/CreateRoom/CreateRoomHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Application/Room/Command/DeleteRoom/DeleteRoomHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Domain/Interface/IRequirementAuthorization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Domain/Interface/IRequirementAuthorization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.Infastructure/Service/AurhorizationRequirement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.Infastructure/Service/AurhorizationRequirement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResturantApplication.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ResturantApplication.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,9 @@
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Controller/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application.Tests/Role/AssignRole/AssignRoleHandlerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application.Tests/Room/Command/CreateRoom/CreateRoomMapperTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ResturantApplication.Application.Tests/UserContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/CreateDish/CreateDishValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ResturantApplication.Application/Dishes/Command/DeleteDish/DeleteDishHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,6 +108,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.ResturantApplication: http.executor": "Run",
+    "64781e28-0a98-4d9b-9a4a-2e2a9e92b43a.executor": "Debug",
+    "92151582-883f-45d3-b544-c2547252cb86.executor": "Debug",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Attach to Process.2050:ResturantApplication.executor": "Debug",
     "HTTP Request.ResturantApplication | #1.executor": "Run",
@@ -115,6 +119,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "f00ebf4c-0ba6-4620-a407-159943cf0099.executor": "Debug",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -203,6 +208,15 @@
       <workItem from="1773735190376" duration="7194000" />
       <workItem from="1773908030451" duration="6912000" />
       <workItem from="1773997624131" duration="7335000" />
+      <workItem from="1774085681289" duration="70000" />
+      <workItem from="1774085871465" duration="128000" />
+      <workItem from="1774087573828" duration="39000" />
+      <workItem from="1774089054606" duration="28000" />
+      <workItem from="1774089964254" duration="42000" />
+      <workItem from="1774091376212" duration="11000" />
+      <workItem from="1774092335876" duration="396000" />
+      <workItem from="1774168295501" duration="70000" />
+      <workItem from="1774168386686" duration="7587000" />
     </task>
     <task id="LOCAL-00001" summary="Added Files">
       <option name="closed" value="true" />

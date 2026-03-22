@@ -10,7 +10,7 @@ public class DeleteRoomHandler(IRoomRepository repository,IRequirementAuthorizat
     public async Task Handle(DeleteRoomCommand request, CancellationToken cancellationToken)
     {
       var result= await repository.GetById(request.Id);
-      if (await requirementAuthorization.Authorize(ResourcesOperation.Delete, result) == false)
+      if ( requirementAuthorization.Authorize(ResourcesOperation.Delete, result) == false)
       {
           throw new Exception("You do not have permission to delete this room");
       }

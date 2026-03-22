@@ -14,11 +14,11 @@ public class CreateRoomHandler(IRoomRepository repository,IMapper mapper,IUserCo
     {
         var reply = mapper.Map<Domain.Entities.Room>(request);
         reply.UserId =context.GetCurrentUser().Id;
-        if (await authorization.Authorize(ResourcesOperation.Create, reply)==false)
+        if (!authorization.Authorize(ResourcesOperation.Create, reply))
         {
             throw new Exception("You cannot create a room");
         }
-       var response= await repository.CreateRoom(reply);
+       var response= await repository.CreateRoom(reply).ConfigureAwait(false);
        return response.Id;
     }
 }

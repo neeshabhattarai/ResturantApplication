@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication.Infast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication.Application", "ResturantApplication.Application\ResturantApplication.Application.csproj", "{225CEAA0-C461-40C7-9ADB-9A0C078D6618}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApplication.Application.Tests", "ResturantApplication.Application.Tests\ResturantApplication.Application.Tests.csproj", "{C3C6D46E-4924-4217-8A53-B205708B6C7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{225CEAA0-C461-40C7-9ADB-9A0C078D6618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{225CEAA0-C461-40C7-9ADB-9A0C078D6618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{225CEAA0-C461-40C7-9ADB-9A0C078D6618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C6D46E-4924-4217-8A53-B205708B6C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C6D46E-4924-4217-8A53-B205708B6C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C6D46E-4924-4217-8A53-B205708B6C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C6D46E-4924-4217-8A53-B205708B6C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
