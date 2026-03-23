@@ -21,5 +21,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f00ebf4c_002D0ba6_002D4620_002Da407_002D159943cf0099/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateRoomHandler_ShouldCreateRoomAndReturnId #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::C3C6D46E-4924-4217-8A53-B205708B6C7D::net8.0::ResturantApplication.Domain.Tests.Room.Command.CreateRoom.CreateRoomHandlerTests.CreateRoomHandler_ShouldCreateRoomAndReturnId&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C3C6D46E-4924-4217-8A53-B205708B6C7D::net8.0::ResturantApplication.Domain.Tests.Dish.Command.CreateDish.CreateDishHandlerTest.CreateDishHandler_ShouldReturnRoomNotFound&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C3C6D46E-4924-4217-8A53-B205708B6C7D::net8.0::ResturantApplication.Domain.Tests.Dish.Command.CreateDish.CreateDishHandlerTest.CreateDishHandler_ShouldReturnSuccess&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C3C6D46E-4924-4217-8A53-B205708B6C7D::net8.0::ResturantApplication.Domain.Tests.Dish.Command.CreateDish.CreateDishHandlerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BBE6EB9-7311-4EB6-988E-84AC2115F6E6::net8.0::ResturantApplication.Api.Tests.Controller.RoomControllerTest.RoomController_ShouldReturnOkResult&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BBE6EB9-7311-4EB6-988E-84AC2115F6E6::net8.0::ResturantApplication.Api.Tests.Middleware.ExceptionHandlerTest.InvokeAsync_ShouldCalledNext&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2BBE6EB9-7311-4EB6-988E-84AC2115F6E6::net8.0::ResturantApplication.Api.Tests.Middleware.ExceptionHandlerTest.InvokeAsync_ShouldNotInvokeNext&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

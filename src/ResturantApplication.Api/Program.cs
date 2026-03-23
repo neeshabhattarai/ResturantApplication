@@ -34,3 +34,8 @@ app.MapGroup("/api").WithTags("User").MapIdentityApi<User>();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program
+{
+    
+}

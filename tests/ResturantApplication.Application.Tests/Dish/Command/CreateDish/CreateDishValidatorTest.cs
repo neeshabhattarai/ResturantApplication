@@ -18,4 +18,5 @@ public class CreateDishValidatorTest
         Assert.False(result.IsValid);
         Assert.Equal("Name must be between 3 and 50 characters",result.Errors[0].ErrorMessage);
     }
+    
 }
