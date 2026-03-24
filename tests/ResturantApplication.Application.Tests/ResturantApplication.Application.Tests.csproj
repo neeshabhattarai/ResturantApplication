@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ResturantApplication.Application\ResturantApplication.Application.csproj" />
+      <ProjectReference Include="..\src\ResturantApplication.Application\ResturantApplication.Application.csproj" />
     </ItemGroup>
 
     <ItemGroup>
